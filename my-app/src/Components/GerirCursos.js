@@ -15,6 +15,7 @@ function GerirCurso(){
                     <h2>GERIR CURSOS</h2>
                     <div className="button-add-curso">
                         <button>Adicionar curso</button>
+                        <button>Adicionar Curso</button>
                     </div>
                 </div>
             </div>

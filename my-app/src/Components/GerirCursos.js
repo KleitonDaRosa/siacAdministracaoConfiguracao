@@ -1,3 +1,6 @@
+//Trabalho de Engenharia de Softwares
+
+
 import ListaCurso from "./ListaCurso";
 
 function GerirCurso(){
@@ -16,6 +19,7 @@ function GerirCurso(){
                     <div className="button-add-curso">
                         <button>Adicionar curso</button>
                         <button>Adicionar Curso</button>
+
                     </div>
                 </div>
             </div>

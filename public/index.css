@@ -1,0 +1,57 @@
+/*------------tela cheia do pc-------------------------*/
+div#topLayout{
+    position: relative;
+    width: 21%;
+    left: 89%;
+}
+div#subtopLayout{
+    width: 100%;
+    height: 50px;
+    background-color: #ECECEC;
+    margin-top: 5px;
+}
+
+div#subtopLayout h2{
+    position: absolute;
+    text-align: center;
+    top:3%;
+    left: 30%;
+
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+div#subtopLayout img{
+    width: 20%;
+    height: 98%;
+}
+
+div#leftLayout{
+    position: absolute;
+    width: 25%;
+    height: 1000px;
+
+}
+
+/*-------------------------------------------------------*/
+
+/*--------Metado da tela do pc ------------*/
+@media screen and (max-width: 800px  ) {
+    div#topLayout{
+        left: 79%;
+    }
+    div#subtopLayout img{
+        width: 20%;
+        height: 90%;
+        margin-left: 1%;
+    }
+    div#subtopLayout h2{
+        font-size: 14pt;
+        top:4%;
+    }
+
+
+}
+/*------------------------------------------*/

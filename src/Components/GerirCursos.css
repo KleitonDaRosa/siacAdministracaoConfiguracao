@@ -1,0 +1,13 @@
+table{
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    right: 25%;
+    bottom: 25%;
+    font-size:100% ;
+}
+
+tr.tableTop{
+    background-color: #C4C4C4;
+}
+

@@ -1,3 +1,5 @@
+import "./FormularioAdicionarCursos.css";
+
 
 function FormularioAdicionarCursos(){
     return(

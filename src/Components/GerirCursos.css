@@ -1,14 +1,27 @@
+html{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
 table{
     position: absolute;
     width: 50%;
     height: 30%;
-    right: 25%;
+    right: 15%;
     bottom: 25%;
-    font-size:100% ;
+    font-size: 14pt;
+
 }
 
+table td{
+    padding-left: 7px;
+}
 tr.tableTop{
     background-color: #C4C4C4;
+
+}
+tr.tableElement{
+    background-color: #F1F1F1 ;
 }
 
 

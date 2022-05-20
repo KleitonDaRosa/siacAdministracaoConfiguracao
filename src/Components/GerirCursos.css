@@ -15,6 +15,7 @@ table{
 
 table td{
     padding-left: 7px;
+    padding-right: 7px;
 }
 tr.tableTop{
     background-color: #C4C4C4;

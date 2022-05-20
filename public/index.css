@@ -1,12 +1,17 @@
 
 body{
     margin:0;
+    font-family: "Times New Roman", serif;
 }
 
 div#topLayout{
     position: relative;
-    width: 21%;
+    height: 20px;
     left: 88%;
+}
+a{
+    position: relative;
+    top:2px;
 }
 div#subtopLayout{
     width: 100%;
@@ -20,8 +25,7 @@ div#subtopLayout h2{
     text-align: center;
     top:3%;
     left: 40%;
-
-    font-family: "Times New Roman", serif;
+    
     font-weight: 300;
     font-size: 15pt;
 
@@ -35,13 +39,16 @@ div#subtopLayout img{
 
 div#leftLayout{
     position: absolute;
-    width: 23%;
-    height: 1000px;
-    background: url("images/imageLeft.png") no-repeat center ;
-    background-size: 100%;
-    background-position-y: -200%;
+    width: 20%;
+    height: 100%;
 
+    border-right: #A8A8A8 solid 1px;
+}
 
+div#leftLayout h2{
+    position: relative;
+    text-align: center;
+    font-weight: normal;
 
 }
 

@@ -1,8 +1,17 @@
-/*------------tela cheia do pc-------------------------*/
+
+body{
+    margin:0;
+    font-family: "Times New Roman", serif;
+}
+
 div#topLayout{
     position: relative;
-    width: 21%;
-    left: 89%;
+    height: 20px;
+    left: 88%;
+}
+a{
+    position: relative;
+    top:2px;
 }
 div#subtopLayout{
     width: 100%;
@@ -15,43 +24,33 @@ div#subtopLayout h2{
     position: absolute;
     text-align: center;
     top:3%;
-    left: 30%;
+    left: 40%;
+    
+    font-weight: 300;
+    font-size: 15pt;
 
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 500;
 
 }
 
 div#subtopLayout img{
-    width: 20%;
-    height: 98%;
+    width: 200px;
+    height: 50px;
 }
 
 div#leftLayout{
     position: absolute;
-    width: 25%;
-    height: 1000px;
+    width: 20%;
+    height: 100%;
+
+    border-right: #A8A8A8 solid 1px;
+}
+
+div#leftLayout h2{
+    position: relative;
+    text-align: center;
+    font-weight: normal;
 
 }
 
-/*-------------------------------------------------------*/
-
-/*--------Metado da tela do pc ------------*/
-@media screen and (max-width: 800px  ) {
-    div#topLayout{
-        left: 79%;
-    }
-    div#subtopLayout img{
-        width: 20%;
-        height: 90%;
-        margin-left: 1%;
-    }
-    div#subtopLayout h2{
-        font-size: 14pt;
-        top:4%;
-    }
 
 
-}
-/*------------------------------------------*/

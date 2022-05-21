@@ -1,25 +1,43 @@
 
-body{
-    margin:0;
+html {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
     font-family: "Times New Roman", serif;
 }
 
+
+/*------------------------------------*/
 div#topLayout{
+    display: inline-block;
     position: relative;
-    height: 20px;
-    left: 88%;
+    left:89%;
+
+
 }
 a{
     position: relative;
     top:2px;
 }
+/*-----------------------------------*/
+
+/*------------------------------------*/
 div#subtopLayout{
     width: 100%;
     height: 50px;
     background-color: #ECECEC;
     margin-top: 5px;
 }
-
 div#subtopLayout h2{
     position: absolute;
     text-align: center;
@@ -28,29 +46,25 @@ div#subtopLayout h2{
     
     font-weight: 300;
     font-size: 15pt;
-
-
 }
-
 div#subtopLayout img{
     width: 200px;
     height: 50px;
 }
+/*------------------------------------*/
 
+/*------------------------------------*/
 div#leftLayout{
+    display: block;
     position: absolute;
     width: 20%;
     height: 100%;
-
     border-right: #A8A8A8 solid 1px;
 }
-
 div#leftLayout h2{
     position: relative;
     text-align: center;
     font-weight: normal;
-
 }
-
-
+/*------------------------------------*/
 

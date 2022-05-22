@@ -15,11 +15,52 @@ function GerirCursos() {
                 {/*Modal Para o formulario criar Novo Curso*/}
                 <div className='modal-classe'>
                     <button onClick={()=> setModalIsOpen(true)}>Adiconar Novo Curso</button>
-                    <Modal isOpen={modalIsOpen}>
-                        <h2>Criar Curso</h2>
-                        <p>Em Construcao.....</p>
+                    <Modal isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
+                        <form>
+                            <h2>Novo Curso</h2>
+                            <div>
+                                <div>
+                                    <label>Nome do Curso: </label>
+                                    <input type='text'></input>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label>Estado do Curso:</label>
+                                    <select>
+                                        <option value="">---Escolhe um Estado---</option>
+                                        <option value="activo">Activo</option>
+                                        <option value="desactivo">Desactivo</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Adicionar Coordenador</label>
+                                <select>
+                                    <option value="">---Escolhe um Coordenador---</option>
+                                    <option value="Sidnei Cruz">Docente-Sidnei Cruz</option>
+                                    <option value="JandirMedina">Jandir Medina</option>
+                                    <option value="Jose Neves">Jose Neves</option>
+                                    <option value="Joao Do Monte">Joao Do Monte</option>
+                                </select>
+                            </div>
+
+
+
+
+                        </form>
+
+
+
+
                         <button onClick={()=> setModalIsOpen(false)}>Cancelar</button>
                     </Modal>
+
+
+
+
                 </div>
                 {/*---------------------------------------*/}
 

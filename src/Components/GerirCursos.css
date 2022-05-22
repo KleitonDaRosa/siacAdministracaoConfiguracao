@@ -5,8 +5,7 @@ html{
 
 .lista-cursos button{
     height: 45px;
-   aligm: center;
-
+   align: center;
 
 }
 
@@ -19,10 +18,6 @@ table{
     font-size: 14pt;
 
 }
-
-
-
-
 table td{
     padding-left: 7px;
     padding-right: 7px;

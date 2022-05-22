@@ -1,4 +1,4 @@
-class NavegacaoTelaReduzida {
+class NavegacaoResponsivo {
 
     constructor(mobileMenu, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu)
@@ -35,5 +35,5 @@ class NavegacaoTelaReduzida {
 }
 
 
-const mobileNavbar = new NavegacaoTelaReduzida(".mobile-menu", ".nav-list", ".nav-list li")
+const mobileNavbar = new NavegacaoResponsivo(".mobile-menu", ".nav-list", ".nav-list li")
 mobileNavbar.init()

@@ -3,6 +3,13 @@ html{
     overflow-x:hidden;
 }
 
+.lista-cursos button{
+    height: 45px;
+   aligm: center;
+
+
+}
+
 table{
     position: absolute;
     width: 50%;
@@ -12,6 +19,9 @@ table{
     font-size: 14pt;
 
 }
+
+
+
 
 table td{
     padding-left: 7px;

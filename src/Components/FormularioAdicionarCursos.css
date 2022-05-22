@@ -1,19 +1,26 @@
-.button-adicionar{
-    background-color: blue;
-    border-color: blue;
-    color: white;
-}
-.button-div{
-    float: center;
-}
-.formulario-criar-curso{
-    float:center
-}
+/*Css - Ordenado por ordem alfabetica (A-Z)*/
 
-.subtitulo{
+
+h2{
     text-align: center;
 }
 
+.modal-classe{
+    padding-left:45%;
+    padding-top: 3%;
+}
+.modal-classe button{
+    height: 10vh;
+    width: 30vh;
+    background-color: blue;
+    border-color: blue;
+    color:white;
+
+}
+
+.new-expense__controls {
+    margin-left: 40%;
+}
 .new-expense__controls {
     display: flex;
     flex-wrap: wrap;
@@ -25,10 +32,10 @@
 .new-expense__control label {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    display: block;
+
 }
 
-.new-expense__control input {
+.new-expense__control input{
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
@@ -37,23 +44,11 @@
     max-width: 100%;
 }
 
-.new-expense__control select {
+.new-expense__control select{
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 16rem;
+    width: 18rem;
     max-width: 100%;
-}
-.new-expense__control button {
-    font: inherit;
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 10rem;
-    max-width: 100%;
-}
-
-.new-expense__actions {
-    text-align: right;
 }

@@ -4,7 +4,7 @@ function retornar(){
 
     return (
         <div>
-            <Gerircursos/>
+
         </div>
     )
 }

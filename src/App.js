@@ -1,4 +1,4 @@
-import Gerircursos from './Components/GerirCursos'
+
 
 function retornar(){
 

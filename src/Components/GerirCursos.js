@@ -18,6 +18,7 @@ function GerirCursos() {
                     <Modal isOpen={modalIsOpen}>
                         <h2>Criar Curso</h2>
                         <p>Em Construcao.....</p>
+                        <button onClick={()=> setModalIsOpen(false)}>Cancelar</button>
                     </Modal>
                 </div>
                 {/*---------------------------------------*/}

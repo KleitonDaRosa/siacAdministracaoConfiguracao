@@ -16,47 +16,59 @@ function GerirCursos() {
                     <button id='button-criarNovoCurso' onClick={()=> setModalIsOpen(true)}>Adiconar Novo Curso</button>
                     <Modal isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
 
-                        <div className="container">
-                            <div className="box">
-                                <form>
-                                    <h2>Novo Curso</h2>
-                                    <div>
-                                        <div>
-                                            <label>Nome do Curso: </label>
-                                            <input type='text'></input>
-                                        </div>
-                                    </div>
 
-                                    <div>
+
+
+
+                            <div className='container-forms'>
+                                <div className='formulario'>
+
+                                    <form>
+                                        <h2>Novo Curso</h2>
                                         <div>
-                                            <label>Estado do Curso:</label>
+                                            <div>
+                                                <label>Curso:      </label>
+                                                <input type='text'></input>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div>
+                                                <label>Estado   </label>
+                                                <select>
+                                                    <option value="">---Selecionar Estado---</option>
+                                                    <option value="activo">Activo</option>
+                                                    <option value="desactivo">Desactivo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label>Coorde</label>
                                             <select>
-                                                <option value="">---Escolhe um Estado---</option>
-                                                <option value="activo">Activo</option>
-                                                <option value="desactivo">Desactivo</option>
+                                                <option value="">---Selecionar um Coordenador---</option>
+                                                <option value="Sidnei Cruz">Docente-Sidnei Cruz</option>
+                                                <option value="JandirMedina">Jandir Medina</option>
+                                                <option value="Jose Neves">Jose Neves</option>
+                                                <option value="Joao Do Monte">Joao Do Monte</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </form>
 
-                                    <div>
-                                        <label>Adicionar Coordenador</label>
-                                        <select>
-                                            <option value="">---Escolhe um Coordenador---</option>
-                                            <option value="Sidnei Cruz">Docente-Sidnei Cruz</option>
-                                            <option value="JandirMedina">Jandir Medina</option>
-                                            <option value="Jose Neves">Jose Neves</option>
-                                            <option value="Joao Do Monte">Joao Do Monte</option>
-                                        </select>
-                                    </div>
+
+                                </div>
+                            </div>
 
 
 
 
-                                </form>
+                        <div className='container-buttons'>
+                            <div className='button-guardar-cancelar'>
+                                <button className='button-guardar' onClick={()=>setModalIsOpen(false)}>Guardar</button>
+                                <button className='button-cancelar' onClick={()=> setModalIsOpen(false)}>Cancelar</button>
                             </div>
                         </div>
-                        <button className='button-guardar' onClick={()=>setModalIsOpen(false)}>Guardar</button>
-                        <button className='button-cancelar' onClick={()=> setModalIsOpen(false)}>Cancelar</button>
+
 
                     </Modal>
 

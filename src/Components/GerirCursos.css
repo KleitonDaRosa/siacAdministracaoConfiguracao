@@ -26,14 +26,48 @@
     width: 20vh;
 }
 
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2vh;
+    margin-top: 2vh;
+
+}
+
+.container-forms{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-right: 10vh;
+
+}
 
 
 html{
     overflow-y:hidden;
     overflow-x:hidden;
 }
+input{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 17rem;
+    max-width: 100%;
+    margin: 1vh;
+}
+select{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 18rem;
+    margin-left:10rem;
+    max-width: 100%;
+    margin: 1vh;
 
-
+}
 
 table{
     position: absolute;

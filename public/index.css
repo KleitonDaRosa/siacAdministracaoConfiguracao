@@ -8,13 +8,19 @@ body{
     background-color: #EDEBEA;
 }
 
-a{
+
+img#logoticoUTA{
+    height: 8vh;
+}
+
+nav ul a{
     color:white;
     text-decoration: none;
 
 }
-a:hover{
+nav ul a:hover{
     opacity: 0.7;
+    color: #B5CDDC;
 }
 
 .logo{
@@ -47,6 +53,39 @@ nav{
     margin-left: 32px;
     letter-spacing: 1px;
 }
+
+
+
+
+
+/*-----------------Div button--------------------------*/
+main{
+    position: relative;
+    display: flex;
+    left:30vh;
+    top:25vh
+}
+.btn-pg-ini{
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvertica, Arial,sans-serif;
+    color: #DDDDDD;
+
+    padding: 8px;
+    background-color: #2F5063;
+    border-radius: 8px;
+    width: 15%;
+    margin-left: 10vh;
+}
+.btn-pg-ini:hover{
+    cursor: pointer;
+    color: #23232e;
+
+    background-color: #5A7687;
+}
+
+/*-----------------------------------------------------*/
+
+
 
 
 
@@ -113,18 +152,42 @@ nav{
     .mobile-menu.active .line3{
         transform: rotate(45deg) translate(-5px, -7px);
     }
+
+    main{
+        left:0;
+        top:25vh
+    }
+    .btn-pg-ini{
+        padding: 20px;
+        margin-left: 6vh;
+    }
 }
+
 @media (max-width: 600px) {
     .logo{
-        font-size: 11pt;
-        letter-spacing: 2px;
+        font-size: 12pt;
+        letter-spacing: 0;
     }
+    img{
+        width: 23vh;
+        height: 8vh;
+    }
+
+    main{
+        left:0;
+        top:25vh
+    }
+    .btn-pg-ini{
+        padding: 20px;
+        margin-left: 6vh;
+    }
+
 }
 
 @media (max-width: 500px) {
     .logo{
-        font-size: 9pt;
-        letter-spacing: 2px;
+        font-size: 12pt;
+        letter-spacing: 0;
     }
     .nav-list li{
         font-size: 9pt;
@@ -136,6 +199,20 @@ nav{
     }
     .mobile-menu.active .line1{
         transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    img{
+        width: 23vh;
+        height: 8vh;
+    }
+
+    main{
+        left:0;
+        top:25vh
+    }
+    .btn-pg-ini{
+        padding: 20px;
+        margin-left: 6vh;
     }
 
 }

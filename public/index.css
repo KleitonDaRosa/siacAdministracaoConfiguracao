@@ -6,6 +6,7 @@
 
 body{
     background-color: #EDEBEA;
+    
 }
 
 
@@ -63,7 +64,7 @@ main{
     position: relative;
     display: flex;
     left:30vh;
-    top:25vh
+    top:25vh;
 }
 .btn-pg-ini{
     text-align: center;
@@ -153,14 +154,6 @@ main{
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
-    main{
-        left:0;
-        top:25vh
-    }
-    .btn-pg-ini{
-        padding: 20px;
-        margin-left: 6vh;
-    }
 }
 
 @media (max-width: 600px) {
@@ -171,15 +164,6 @@ main{
     img{
         width: 23vh;
         height: 8vh;
-    }
-
-    main{
-        left:0;
-        top:25vh
-    }
-    .btn-pg-ini{
-        padding: 20px;
-        margin-left: 6vh;
     }
 
 }
@@ -206,14 +190,6 @@ main{
         height: 8vh;
     }
 
-    main{
-        left:0;
-        top:25vh
-    }
-    .btn-pg-ini{
-        padding: 20px;
-        margin-left: 6vh;
-    }
 
 }
 /*--------------------------------------------------------------------------*/

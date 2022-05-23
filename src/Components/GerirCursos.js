@@ -7,14 +7,15 @@ function GerirCursos() {
     const [modalIsOpen , setModalIsOpen] = useState(false);
     return (
         <div>
+
             {/*Modal Para o formulario criar Novo Curso*/}
             <div className='modal-classe'>
-                <button id='button-criarNovoCurso' onClick={()=> setModalIsOpen(true)}>Adiconar Novo Curso</button>
+                <div className='button-adicionar-novoCurso'>
+                    <button onClick={()=> setModalIsOpen(true)}>Adiconar Novo Curso</button>
+                </div>
+
+
                 <Modal isOpen={modalIsOpen} onRequestClose={()=> setModalIsOpen(false)}>
-
-
-
-
 
                     <div className='container-forms'>
                         <div className='formulario'>

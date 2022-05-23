@@ -8,13 +8,7 @@
 
 }
 
-#button-criarNovoCurso  {
 
-    background-color: #2F5063;
-    border-color: #2F5063;
-    color: white;
-    margin-left: 3px;
-}
 
 
 
@@ -57,6 +51,24 @@ input{
     max-width: 100%;
     margin: 1vh;
 }
+
+
+.modal-classe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.modal-classe button{
+    background-color: #2F5063;
+    border-color: #2F5063;
+    color: white;
+    margin-left: 3px;
+    height: 10vh;
+    width: 25vh;
+}
+
 select{
     font: inherit;
     padding: 0.5rem;

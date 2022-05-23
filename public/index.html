@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="index.css"/>
-        <title>React App</title>
-    </head>
-    <body>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SIAC</title>
+</head>
+<body>
+<header>
+    <nav>
+        <img src="imgIconUTA.png" id="logoticoUTA" alt=""/>
+        <h1 class="logo">SISTEMA DE GESTÃO ACADÊMICA</h1>
 
-        <div id="topLayout">
-            <a href="">Minha conta</a> | <a href="">Logout</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
 
-        <div id="subtopLayout">
-            <img src="./images/iconuta.png" alt="">
-            <h2>SISTEMA DE GESTÃO ACADÊMICA</h2>
-        </div>
+        <ul class="nav-list">
+            <li><a href="">Minha conta</a></li>
+            <li><a href="">Sign out</a></li>
+        </ul>
+    </nav>
 
-        <div id="leftLayout">
-            <h2>Administrador</h2>
-        </div>
+    <main>
+        <div class="btn-pg-ini">Administrar Matriculas</div>
+        <div class="btn-pg-ini">Perfil de Utilizador</div>
+        <div class="btn-pg-ini">Gerir Cursos</div>
+    </main>
 
-        <div id="root">
-        </div>
+</header>
 
+<script src="navegacaoResponsivo.js"></script>
 
-    </body>
+<div id="root">
+
+</div>
+
+</body>
 </html>

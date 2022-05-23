@@ -1,11 +1,11 @@
-import GerirCursos from "./Components/GerirCursos";
-import FormularioAdicionarCursos from "./Components/FormularioAdicionarCursos";
+import Gerircursos from './Components/GerirCursos'
 
-
-function App(){
+function retornar(){
 
     return (
-         <GerirCursos></GerirCursos>
+        <div>
+            <Gerircursos/>
+        </div>
     )
 }
-export default App
+export default retornar

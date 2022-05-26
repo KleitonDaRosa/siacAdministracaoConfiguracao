@@ -6,8 +6,7 @@ import Modal from "react-modal";
 function GerirCursos() {
     const [modalIsOpen , setModalIsOpen] = useState(false);
     return (
-        <div>
-
+        <>
             {/*Modal Para o formulario criar Novo Curso*/}
             <div className='modal-classe'>
                 <div className='button-adicionar-novoCurso'>
@@ -98,7 +97,7 @@ function GerirCursos() {
                 </tr>
             </table>
         </div>
-            </div>
+            </>
     )
 }
 

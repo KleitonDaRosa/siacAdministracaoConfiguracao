@@ -7,6 +7,7 @@ function GerirCursos() {
     const [modalIsOpen , setModalIsOpen] = useState(false);
     return (
         <>
+
             {/*Modal Para o formulario criar Novo Curso*/}
             <div className='modal-classe'>
                 <div className='button-adicionar-novoCurso'>

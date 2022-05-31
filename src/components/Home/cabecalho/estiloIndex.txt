@@ -1,0 +1,165 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EDEBEA;
+    font-family: system-ui, -apple-system, Helvertica, Arial,sans-serif;
+
+}
+div#root{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+img#logoticoUTA{
+    height: 8vh;
+}
+
+nav ul a{
+    color:white;
+    text-decoration: none;
+
+}
+nav ul a:hover{
+    opacity: 0.7;
+    color: #B5CDDC;
+}
+
+.logo{
+    font-size: clamp(0.2em, 0.5em + 1vw , 1.25em);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #E3E0DF;
+    font-weight: normal;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23232e;
+    height: 10vh;
+}
+
+
+
+
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin-left: 32px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+/*-------------------------------- resposivo para telemóveis------------------------------------*/
+@media (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 20vh;
+        background-color: #31313C;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in ;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu div{
+        cursor:pointer;
+        width: 32px;
+        height: 2px;
+        background-color: white;
+        margin: 8px;
+        transition: 0.4s ;
+    }
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+}
+
+@media (max-width: 600px) {
+    img{
+        width: 23vh;
+        height: 8vh;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .nav-list li{
+        font-size: 9pt;
+    }
+    .mobile-menu div{
+        width: 25px;
+        height: 2px;
+        margin: 5px;
+    }
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    img{
+        width: 23vh;
+        height: 8vh;
+    }
+
+
+}
+/*--------------------------------------------------------------------------*/

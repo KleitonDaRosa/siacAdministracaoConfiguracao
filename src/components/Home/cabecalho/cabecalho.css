@@ -1,0 +1,45 @@
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23232e;
+    height: 10vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-left: 32px;
+    letter-spacing: 1px;
+}
+
+
+
+
+img#logoticoUTA{
+    height: 8vh;
+}
+
+h1.titulo{
+    font-size: clamp(0.2em, 0.5em + 1vw , 1.25em);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #E3E0DF;
+    font-weight: normal;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+
+}
+
+a:hover{
+    opacity: 0.7;
+    color: #B5CDDC;
+}

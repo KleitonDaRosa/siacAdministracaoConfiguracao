@@ -1,0 +1,103 @@
+.button-cancelar{
+    height:6vh;
+    width: 20vh;
+    color:white;
+    background-color: #534D44;
+    border-color: #534D44;
+    margin-left: 3px;
+
+}
+
+
+
+
+
+.button-guardar{
+    background-color: #2F5063;
+    border-color: #2F5063;
+    color: white;
+    height:6vh;
+    width: 20vh;
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2vh;
+    margin-top: 2vh;
+
+}
+
+.container-forms{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-right: 10vh;
+
+}
+
+
+html{
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+input{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 17rem;
+    max-width: 100%;
+    margin: 1vh;
+}
+
+
+.modal-classe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.modal-classe button{
+    background-color: #2F5063;
+    border-color: #2F5063;
+    color: white;
+    margin-left: 3px;
+    height: 10vh;
+    width: 25vh;
+}
+
+select{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 18rem;
+    margin-left:10rem;
+    max-width: 100%;
+    margin: 1vh;
+
+}
+
+table{
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    right: 15%;
+    bottom: 25%;
+    font-size: 14pt;
+
+}
+table td{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+tr.tableTop{
+    background-color: #C4C4C4;
+
+}
+tr.tableElement{
+    background-color: #F1F1F1 ;
+}

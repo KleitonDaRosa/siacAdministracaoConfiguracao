@@ -1,3 +1,8 @@
+div#gerirCursos{
+    border: black solid 1px;
+}
+
+
 .button-cancelar{
     height:6vh;
     width: 20vh;
@@ -7,9 +12,6 @@
     margin-left: 3px;
 
 }
-
-
-
 
 
 .button-guardar{
@@ -82,10 +84,10 @@ select{
 }
 
 table{
-    position: absolute;
+    position: relative;
+    left: 20%;
     width: 50%;
     height: 30%;
-    right: 15%;
     bottom: 25%;
     font-size: 14pt;
 
@@ -100,4 +102,8 @@ tr.tableTop{
 }
 tr.tableElement{
     background-color: #F1F1F1 ;
+}
+
+h2{
+    text-align: center;
 }

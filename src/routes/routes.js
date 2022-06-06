@@ -13,6 +13,10 @@ export default function Routes() {
                 <Route path="/perfilutilizador" component={PerfilUtilizador}/>
                 <Route path="/administarmatriculas" component={AdministarMatriculas}/>
             </Switch>
+
+            <switch>
+
+            </switch>
         </Router>
     )
 }

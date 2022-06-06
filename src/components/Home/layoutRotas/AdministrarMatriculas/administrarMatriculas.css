@@ -1,4 +1,16 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 div#administrarMatriculas{
     border: black 1px solid ;
+}
 
+.submitProcura{
+    background-color: #2F5063;
+    border-color: #2F5063;
+    color: white;
+    height:6vh;
+    width: 20vh;
 }

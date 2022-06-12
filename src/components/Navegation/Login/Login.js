@@ -20,8 +20,12 @@ export default function Login() {
 
     return (
         <>
+            <h1> Pagina de login </h1>
             <form>
+                <label>Usuário</label>
                 <input type="text" onChange={(event) => setUserName(event.target.value)}/>
+
+                <label>Senha</label>
                 <input type="text" onChange={(event) => setPassword(event.target.value)}/>
 
                 <button type="submit" onClick={() => loginUser()}> Entrar</button>

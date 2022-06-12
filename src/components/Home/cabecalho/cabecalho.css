@@ -23,6 +23,7 @@ img#logoticoUTA {
     height: 8vh;
 }
 
+
 h1.titulo {
     font-size: clamp(0.2em, 0.5em + 1vw, 1.25em);
     text-transform: uppercase;

@@ -22,14 +22,13 @@ export default function Routes() {
                 <ProtectedRoute path="/perfilutilizador" component={PerfilUtilizador} showHome/>
                 <ProtectedRoute path="/criarperfil" component={CriarPerfil} showHome/>
                 <ProtectedRoute path="/editarperfil" component={EditarPerfil} showHome/>
-
                 <ProtectedRoute path="/administarmatriculas" component={AdministarMatriculas} showHome/>
-
                 <ProtectedRoute path="/minhaconta">
                     <Cabecalho/>
                     <MinhaConta/>
                 </ProtectedRoute>
 
+                
                 <Route path="/" component={Login}/>
 
             </Switch>

@@ -1,0 +1,14 @@
+div#perfilDeUtilizador{
+ border: black 1px solid ;
+ align-items: center;
+
+}
+
+button.btnTipe1{
+ background-color: #2F5063;
+ border-color: #2F5063;
+ color: white;
+ height:6vh;
+ width: 20vh;
+ margin: 10px;
+}

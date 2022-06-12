@@ -1,6 +1,7 @@
 import React from "react"
 import UtaIcon from "./imgIconUTA.png"
 import "./cabecalho.css"
+import history from "../../../services/history";
 
 export default function Cabecalho() {
     return (
@@ -18,9 +19,12 @@ export default function Cabecalho() {
 
                     <ul>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <li><a href="./minhaconta">Minha conta</a></li>
+                        <li><a>Minha conta</a></li>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <li><a href="./signout">Sign out</a></li>
+                        <li><a onClick={() => {
+                            localStorage.removeItem("isAuthenticated")
+                            history.push("/")
+                        }}>Sign out</a></li>
                     </ul>
                 </nav>
             </header>

@@ -2,7 +2,7 @@ import "./Home.css"
 import history from "../../services/history";
 import Cabecalho from "./cabecalho/cabecalho";
 
-export default function home() {
+export default function Home() {
     return (
         <>
             <Cabecalho/>

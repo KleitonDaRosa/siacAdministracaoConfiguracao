@@ -1,8 +1,31 @@
-export default function login(){
+import {useEffect, useState} from "react";
+import history from "../../../services/history"
 
-    return(
+export default function Login() {
+    const [userName, setUserName] = useState("");
+    const [password, setPassword] = useState("");
+
+    useEffect(() => {
+        if (localStorage.getItem("isAuthenticated") != null) {
+            history.push("/perfilutilizador")
+        }
+    }, [])
+
+    function loginUser() {
+        if (userName === "Admin" && password === "Admin") {
+            localStorage.setItem("isAuthenticated", "true")
+            history.push("/perfilutilizador")
+        }
+    }
+
+    return (
         <>
-            <p>Bem vindo a pagina de LogIN</p>
+            <form>
+                <input type="text" onChange={(event) => setUserName(event.target.value)}/>
+                <input type="text" onChange={(event) => setPassword(event.target.value)}/>
+
+                <button type="submit" onClick={() => loginUser()}> Entrar</button>
+            </form>
         </>
     )
 }

@@ -5,11 +5,15 @@ export default function Login() {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
 
+    //--------------caso já estiver feito o login------------------------------
     useEffect(() => {
         if (localStorage.getItem("isAuthenticated") != null) {
             history.push("/perfilutilizador")
         }
     }, [])
+
+    //------------------------------------------------------------------------
+
 
     function loginUser() {
         if (userName === "Admin" && password === "Admin") {

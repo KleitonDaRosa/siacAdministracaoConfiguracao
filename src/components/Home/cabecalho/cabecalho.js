@@ -18,10 +18,12 @@ export default function Cabecalho() {
                     </div>
 
                     <ul>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <li><a>Minha conta</a></li>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <li><a onClick={() => {
+
+                        <li className={"pointclick"}><a onClick={() => {
+                            history.push("/minhaconta")
+                        }}>Minha conta</a></li>
+
+                        <li className={"pointclick"}><a onClick={() => {
                             localStorage.removeItem("isAuthenticated")
                             history.push("/")
                         }}>Sign out</a></li>

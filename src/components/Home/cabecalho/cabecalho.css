@@ -19,27 +19,29 @@ ul li {
 }
 
 
-
-
-img#logoticoUTA{
+img#logoticoUTA {
     height: 8vh;
 }
 
-h1.titulo{
-    font-size: clamp(0.2em, 0.5em + 1vw , 1.25em);
+h1.titulo {
+    font-size: clamp(0.2em, 0.5em + 1vw, 1.25em);
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #E3E0DF;
     font-weight: normal;
 }
 
-a{
-    color:white;
+a {
+    color: white;
     text-decoration: none;
 
 }
 
-a:hover{
+a:hover {
     opacity: 0.7;
     color: #B5CDDC;
+}
+
+.pointclick:hover {
+    cursor: pointer;
 }

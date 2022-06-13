@@ -33,7 +33,7 @@ export default function () {
                                 placeholder="Tel:"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password">Email</label>
+                            <label htmlFor="password">Emaill</label>
                             <input
                                 type="password"
                                 className="form-control"
@@ -41,6 +41,7 @@ export default function () {
                                 placeholder="email:"/>
                         </div>
                         <button type="submit" className="btn btn-primary">Editar Perfil</button>
+                        <h3>edita o perfil</h3>
                     </form>
                 </div>
             </div>

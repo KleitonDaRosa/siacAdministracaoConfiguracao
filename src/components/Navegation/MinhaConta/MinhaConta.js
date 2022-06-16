@@ -41,8 +41,8 @@ export default function () {
                                 placeholder="email:"/>
                         </div>
                         <button type="submit" className="btn btn-primary">Editar Perfil</button>
-                        <h3>edita o perfil</h3>
-                        <h3>edita o perfil1</h3>
+
+
                     </form>
                 </div>
             </div>

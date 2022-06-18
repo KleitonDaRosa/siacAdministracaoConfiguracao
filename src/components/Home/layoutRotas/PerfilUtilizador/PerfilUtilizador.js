@@ -1,6 +1,7 @@
 import "./perfilutilizador.css"
 import history from "../../../../services/history";
 
+
 export default function PerfilUtilizador() {
     return (
         <div id="perfilDeUtilizador">

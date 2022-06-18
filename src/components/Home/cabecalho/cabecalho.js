@@ -21,7 +21,6 @@ export default function Cabecalho() {
                     </div>
 
                     <ul>
-
                         <li className={"pointclick"}><a onClick={() => {
                             history.push("/minhaconta")
                         }}>Minha conta</a></li>

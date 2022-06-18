@@ -1,10 +1,10 @@
-.buttonsNav{
-    display: flex;
-    position: relative;
-
+ul.nav {
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
-.btnNav{
-    margin: 20px;
+
+li.nav-item {
+    cursor: pointer;
 }
 
 

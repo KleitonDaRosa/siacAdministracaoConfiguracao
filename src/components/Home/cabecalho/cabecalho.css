@@ -16,6 +16,7 @@ ul {
 ul li {
     margin-left: 32px;
     letter-spacing: 1px;
+    color: white;
 }
 
 
@@ -33,9 +34,8 @@ h1.titulo {
 }
 
 a {
-    color: white;
-    text-decoration: none;
 
+    text-decoration: none;
 }
 
 a:hover {

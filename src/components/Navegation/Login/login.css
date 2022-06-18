@@ -1,0 +1,11 @@
+div#formLogin {
+    display: block;
+    position: relative;
+    left: 25%;
+    width: 40%;
+
+}
+
+button.btn-success {
+    margin-top: 2%;
+}

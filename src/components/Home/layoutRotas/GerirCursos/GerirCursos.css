@@ -1,12 +1,8 @@
-div#gerirCursos{
-    border: black solid 1px;
-}
 
-
-.button-cancelar{
-    height:6vh;
+.button-cancelar {
+    height: 6vh;
     width: 20vh;
-    color:white;
+    color: white;
     background-color: #534D44;
     border-color: #534D44;
     margin-left: 3px;
@@ -14,15 +10,15 @@ div#gerirCursos{
 }
 
 
-.button-guardar{
+.button-guardar {
     background-color: #2F5063;
     border-color: #2F5063;
     color: white;
-    height:6vh;
+    height: 6vh;
     width: 20vh;
 }
 
-.container-buttons{
+.container-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -31,20 +27,21 @@ div#gerirCursos{
 
 }
 
-.container-forms{
+.container-forms {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     margin-right: 10vh;
 
 }
 
 
-html{
-    overflow-y:hidden;
-    overflow-x:hidden;
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-input{
+
+input {
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
@@ -55,14 +52,14 @@ input{
 }
 
 
-.modal-classe{
+.modal-classe {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10vh;
 }
 
-.modal-classe button{
+.modal-classe button {
     background-color: #2F5063;
     border-color: #2F5063;
     color: white;
@@ -71,19 +68,19 @@ input{
     width: 25vh;
 }
 
-select{
+select {
     font: inherit;
     padding: 0.5rem;
     border-radius: 6px;
     border: 1px solid #ccc;
     width: 18rem;
-    margin-left:10rem;
+    margin-left: 10rem;
     max-width: 100%;
     margin: 1vh;
 
 }
 
-table{
+table {
     position: relative;
     left: 20%;
     width: 50%;
@@ -92,18 +89,21 @@ table{
     font-size: 14pt;
 
 }
-table td{
+
+table td {
     padding-left: 7px;
     padding-right: 7px;
 }
-tr.tableTop{
+
+tr.tableTop {
     background-color: #C4C4C4;
 
 }
-tr.tableElement{
-    background-color: #F1F1F1 ;
+
+tr.tableElement {
+    background-color: #F1F1F1;
 }
 
-h2{
+h2 {
     text-align: center;
 }

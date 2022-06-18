@@ -7,4 +7,8 @@ li.nav-item {
     cursor: pointer;
 }
 
+li.nav-item:hover {
+    background-color: #C4C4C4;
+}
+
 

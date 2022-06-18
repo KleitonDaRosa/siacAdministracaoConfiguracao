@@ -14,22 +14,22 @@ export default function Cabecalho() {
 
                     <h1 className="titulo">SISTEMA DE GESTÃO ACADÊMICA</h1>
 
-                    <div className="mobile-menu">
-                        <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                    </div>
-
-                    <ul>
-                        <li className={"pointclick"}><a onClick={() => {
+                    <ul className="nav justify-content-end">
+                        <li className={"pointclick nav-item"}><a onClick={() => {
                             history.push("/minhaconta")
                         }}>Minha conta</a></li>
 
-                        <li className={"pointclick"}><a onClick={() => {
-                            localStorage.removeItem("isAuthenticated")
-                            history.push("/")
-                        }}>Sign out</a></li>
+                        <li className={"pointclick nav-item"}>
+                            <a onClick={() => {
+                                localStorage.removeItem("isAuthenticated")
+                                history.push("/")
+                            }}>
+                                Sign out
+                            </a>
+                        </li>
+
                     </ul>
+
                 </nav>
             </header>
         </div>

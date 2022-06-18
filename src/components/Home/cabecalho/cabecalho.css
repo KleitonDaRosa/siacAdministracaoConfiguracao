@@ -8,20 +8,13 @@ nav {
     height: 10vh;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-}
-
-ul li {
-    margin-left: 32px;
-    letter-spacing: 1px;
-    color: white;
-}
-
 
 img#logoticoUTA {
     height: 8vh;
+}
+
+img#logoticoUTA:hover {
+    cursor: pointer;
 }
 
 
@@ -33,8 +26,8 @@ h1.titulo {
     font-weight: normal;
 }
 
-a {
 
+a {
     text-decoration: none;
 }
 
@@ -43,6 +36,11 @@ a:hover {
     color: #B5CDDC;
 }
 
-.pointclick:hover {
-    cursor: pointer;
+
+ul li {
+    margin-left: 32px;
+    letter-spacing: 1px;
+    color: white;
 }
+
+

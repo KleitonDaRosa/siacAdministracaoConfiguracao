@@ -7,10 +7,11 @@ export default function PerfilUtilizador() {
         <div id="perfilDeUtilizador">
             <h2>Perfil de Utilizador</h2>
 
-            <button className="btnTipe1" onClick={() => history.push("/criarperfil")}>Criar Pefil
+            <button className="btnTipe1 btn btn-primary" onClick={() => history.push("/criarperfil")}>Criar Pefil
             </button>
 
-            <button className="btnTipe1" onClick={() => history.push("/editarperfil")}>Editar perfil</button>
+            <button className="btnTipe1 btn btn-primary" onClick={() => history.push("/editarperfil")}>Editar perfil
+            </button>
         </div>
     )
 

@@ -27,11 +27,11 @@ export default function Login() {
 
     return (
         <>
-            <h2> login </h2>
-            <h4>Sistema de administracao Academica</h4>
             <div id="formLogin">
+                <h2> Login </h2>
                 <div className="form-floating mb-3 ">
                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"
+                           aria-describedby="validationTooltipUsernamePrepend" required
                            onChange={(event) => setUserName(event.target.value)}/>
                     <label htmlFor="floatingInput">Nome</label>
                 </div>
@@ -40,7 +40,8 @@ export default function Login() {
                            onChange={(event) => setPassword(event.target.value)}/>
                     <label htmlFor="floatingPassword">Senha</label>
                 </div>
-                <button className="btn btn-success" onClick={() => loginUser()}>Login</button>
+                <button type="submit" className="btn btn-success" onClick={() => loginUser()}>Login</button>
+                <p>Sistema de administração academica</p>
             </div>
         </>
     )

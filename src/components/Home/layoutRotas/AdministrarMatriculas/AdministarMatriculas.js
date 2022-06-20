@@ -1,6 +1,22 @@
 import "./administrarMatriculas.css"
+import React, {useEffect, useState} from "react";
+
+
 
 export default function AdministarMatriculas() {
+
+    //----------------------- Opter os cursos do backend sobre os cursos------------------------------------------------
+    const [cursos, setCursos] = useState([]);
+
+    useEffect(() => {
+        fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/cursos`)
+            .then((response) => {
+                return response.json()
+            }).then((data) => setCursos(data))
+    }, [])
+
+    //------------------------------------------------------------------------------------------------------------------
+
     return (
 
         <div id="administrarMatriculas">
@@ -9,17 +25,17 @@ export default function AdministarMatriculas() {
             <form>
                 <label>Curso</label>
                 <select>
-                    <option value="">------</option>
-                    <option value="LEIT">LEIT</option>
-                    <option value="LEIT">LEIT2</option>
-                    <option value="LEIT">LEIT2</option>
-                    <option value="LEIT">LEIT3</option>
+                    {
+                        cursos.map((curso) => (
+                            <option>{curso.nome_curso}</option>
+                        ))
+                    }
                 </select>
 
                 <br/>
                 <label>Nome do estudante:</label>
                 <input type="text"/>
-
+                <br/>
                 <label>Código do estudante:</label>
                 <input type="number"/>
 

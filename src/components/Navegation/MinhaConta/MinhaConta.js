@@ -1,6 +1,6 @@
 import "./MinhaConta.css"
 
-export default function () {
+export default function MinhaConta () {
     return (
         <section className=" minhaconta my-2 p-5 ">
             <h6 className="border-bottom border-gray pb-2 mb-0 h4 ">Detalhes da conta</h6>

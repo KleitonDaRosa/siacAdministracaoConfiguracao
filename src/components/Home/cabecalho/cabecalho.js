@@ -8,6 +8,8 @@ export default function Cabecalho() {
         <div>
             <header>
                 <nav>
+
+
                     <img className={"pointclick"} src={UtaIcon} onClick={() => {
                         history.push("/perfilutilizador")
                     }} id="logoticoUTA" alt=""/>

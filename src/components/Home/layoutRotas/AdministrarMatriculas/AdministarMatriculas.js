@@ -21,8 +21,7 @@ export default function AdministarMatriculas() {
 
         <div id="administrarMatriculas">
             <h2>Administrar Matriculas</h2>
-
-            <form>
+            <form className={"form1"}>
                 <label>Curso</label>
                 <select>
                     {
@@ -40,8 +39,9 @@ export default function AdministarMatriculas() {
                 <input type="number"/>
 
                 <br/>
-                <button type="submit" className="submitProcura">Procurar</button>
+                <button type="button" className="btn btn-secondary submitProcura">Procurar</button>
             </form>
+
         </div>
     )
 

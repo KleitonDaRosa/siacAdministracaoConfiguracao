@@ -8,6 +8,7 @@ export default function Login() {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
 
+
     //--------------caso já estiver feito o login------------------------------
     useEffect(() => {
         if (localStorage.getItem("isAuthenticated") != null) {
@@ -22,6 +23,9 @@ export default function Login() {
         if (userName === "Admin" && password === "Admin") {
             localStorage.setItem("isAuthenticated", "true")
             history.push("/perfilutilizador")
+        }
+        else{
+            document.querySelector(" input.form-control").classList.add("is-invalid")
         }
     }
 

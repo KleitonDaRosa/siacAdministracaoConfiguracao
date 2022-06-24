@@ -1,6 +1,7 @@
 import "./GerirCursos.css"
 import React, {useEffect, useState} from "react";
 import Modal from "react-modal";
+import Example from "./TEST"
 
 
 function GerirCursos() {
@@ -39,7 +40,8 @@ function GerirCursos() {
         {/*Modal Para o formulario criar Novo Curso*/}
         <div className='modal-classe'>
             <div className='button-adicionar-novoCurso'>
-                <button onClick={() => setModalIsOpen(true)}>Adiconar Novo Curso</button>
+                <button type="button" className="btn btn-secondary submitProcura" onClick={() => setModalIsOpen(true)}>Adiconar Novo Curso</button>
+
             </div>
 
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
@@ -101,12 +103,14 @@ function GerirCursos() {
 
         {/*---------------------------------------*/}
         <div id="tabela">
-            <table>
-                <tr className="tableTop">
-                    <td>Nome do curso</td>
-                    <td>Estado</td>
+            <table className="table table-hover">
+                <thead>
+                <tr>
+                    <th> Nome do curso</th>
+                    <th> Estado</th>
                 </tr>
-
+                </thead>
+                <tbody className="table-group-divider">
                 {
                     cursos.map((curso) => (
                         <tr className="tableElement">
@@ -115,8 +119,12 @@ function GerirCursos() {
                         </tr>
                     ))
                 }
+                </tbody>
+
             </table>
         </div>
+
+
     </div>)
 }
 

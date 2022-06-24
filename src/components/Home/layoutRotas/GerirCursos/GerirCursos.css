@@ -36,22 +36,6 @@
 }
 
 
-html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-input {
-    font: inherit;
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    width: 17rem;
-    max-width: 100%;
-    margin: 1vh;
-}
-
-
 .modal-classe {
     display: flex;
     flex-direction: row;
@@ -80,30 +64,17 @@ select {
 
 }
 
-table {
+
+div#tabela{
+    width: 40%;
     position: relative;
-    left: 20%;
-    width: 50%;
-    height: 30%;
-    bottom: 25%;
-    font-size: 14pt;
-
+    left: 15%;
+    margin-top: 2%;
+    border: 1px black solid;
 }
-
-table td {
-    padding-left: 7px;
-    padding-right: 7px;
+.table{
+    margin-top: 1%;
 }
-
-tr.tableTop {
-    background-color: #C4C4C4;
-
-}
-
-tr.tableElement {
-    background-color: #F1F1F1;
-}
-
-h2 {
-    text-align: center;
+tr.tableElement{
+    cursor: pointer;
 }

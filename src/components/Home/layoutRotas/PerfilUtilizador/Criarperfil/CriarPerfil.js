@@ -1,3 +1,4 @@
+import "./CriarPerfil.css"
 export default function CriarPerfil () {
     return (
 

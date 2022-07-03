@@ -23,11 +23,15 @@ export default function Procurar({alunos}) {
             <Collapse in={open}>
                 <div id="example-collapse-text">
                     <br/>
-                    <p>Ainda nao ha dados</p>
                     {
-                        alunos.map((aluno) => (
-                            <p>{aluno.nome_aluno}</p>
-                        ))
+                       alunos.length > 0 ? (
+                            alunos.map((aluno) => {
+                                if(aluno.nome_aluno === "Jose Rui"){
+                                    return  <p>{aluno.nome_aluno}</p>
+                                }
+                            })
+                        ) : <p>Ainda nao ha dados</p>
+
                     }
                 </div>
             </Collapse>

@@ -35,6 +35,23 @@ function GerirCursos() {
 
     //------------------------------------------------------------------------------------------------------------------
 
+
+    //-----------------Eliminar curso ---------------------------------------------------------------------------------
+    function removerCurso(idCurso){
+        const reqOptions = {
+            method: "DELETE",
+            headers: {"Content-Type": "application/json"},
+        }
+        fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/cursos?id=${idCurso}`, reqOptions)
+            .then(response => response.json())
+            .then(data => {
+                if(data){
+                    setCursos(cursos.filter(curso => curso.id_curso !== idCurso)) // remover do array de cursos
+                }
+            })
+    }
+    //-----------------------------------------------------------------------------------------------------------------
+
     return (<div id="gerirCursos">
         <h2>Gerir Cursos</h2>
         {/*Modal Para o formulario criar Novo Curso*/}
@@ -113,7 +130,7 @@ function GerirCursos() {
                 <tbody className="table-group-divider">
                 {
                     cursos.map((curso) => (
-                        <tr className="tableElement">
+                        <tr className="tableElement" onClick={() => removerCurso(curso.id_curso)}>
                             <td>{curso.nome_curso}</td>
                             <td>{curso.estado_curso}</td>
                         </tr>

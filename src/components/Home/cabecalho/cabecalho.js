@@ -2,6 +2,7 @@ import React from "react"
 import UtaIcon from "./imgIconUTA.png"
 import "./cabecalho.css"
 import history from "../../../services/history";
+import Example from "../../ModalsBootstrap/ModalSair"
 
 export default function Cabecalho() {
     return (
@@ -21,14 +22,7 @@ export default function Cabecalho() {
                             history.push("/minhaconta")
                         }}>Minha conta</a></li>
 
-                        <li className={"pointclick nav-item"}>
-                            <a onClick={() => {
-                                localStorage.removeItem("isAuthenticated")
-                                history.push("/")
-                            }}>
-                                Sign out
-                            </a>
-                        </li>
+                        <Example/>
 
                     </ul>
 

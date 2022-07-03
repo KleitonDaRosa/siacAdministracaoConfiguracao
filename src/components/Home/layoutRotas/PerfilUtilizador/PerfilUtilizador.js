@@ -12,6 +12,7 @@ export default function PerfilUtilizador() {
 
             <button className="btnTipe1 btn btn-primary" onClick={() => history.push("/editarperfil")}>Editar perfil
             </button>
+
         </div>
     )
 

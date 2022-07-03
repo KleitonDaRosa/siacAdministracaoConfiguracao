@@ -2,7 +2,7 @@ import React from "react"
 import UtaIcon from "./imgIconUTA.png"
 import "./cabecalho.css"
 import history from "../../../services/history";
-import Example from "../../ModalsBootstrap/ModalSair"
+import Example from "./BootstrapModalSair"
 
 export default function Cabecalho() {
     return (

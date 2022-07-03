@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {H2,FORM,ButtonProcurar} from "./Stylecomponet"
+import {H2,FORM} from "./Stylecomponet"
+import Procurar from "./BootstrapCollapseProcurarMatriculas"
 
 export default function AdministarMatriculas() {
 
@@ -45,10 +46,9 @@ export default function AdministarMatriculas() {
                     </div>
                 </div>
 
-                <br/>
-                <ButtonProcurar type="button" className="btn btn-primary submitProcura">Procurar</ButtonProcurar>
-            </FORM>
 
+                <Procurar/>
+            </FORM>
 
         </div>
     )

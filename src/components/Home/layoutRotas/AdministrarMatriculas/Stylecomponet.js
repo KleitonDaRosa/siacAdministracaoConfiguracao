@@ -13,8 +13,3 @@ export const FORM = styled.form`
   width: 20%;
 `;
 
-export const ButtonProcurar = styled.button`
-  margin-top: 10px;
-  height: 6vh;
-  width: 20vh;
-`;

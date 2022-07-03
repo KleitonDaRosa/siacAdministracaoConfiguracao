@@ -84,16 +84,7 @@ function GerirCursos() {
                                 </div>
                             </div>
 
-                            <div>
-                                <label>Coorde</label>
-                                <select>
-                                    <option value="">---Selecionar um Coordenador---</option>
-                                    <option value="Sidnei Cruz">Docente-Sidnei Cruz</option>
-                                    <option value="JandirMedina">Jandir Medina</option>
-                                    <option value="Jose Neves">Jose Neves</option>
-                                    <option value="Joao Do Monte">Joao Do Monte</option>
-                                </select>
-                            </div>
+
                         </form>
 
 

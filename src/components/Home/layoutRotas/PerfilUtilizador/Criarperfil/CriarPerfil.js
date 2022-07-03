@@ -57,16 +57,18 @@ export default function CriarPerfil () {
                                                         type="password"
                                                         className="form-control"
                                                         id="password"
-                                                        placeholder=":"/>
+                                                        placeholder=" "/>
 
                                                 </div>
                                 </div>
-                                <div>
-                                    <button type="submit" className="btn btn-primary">Cancelar</button>
-                                        <button type="submit" className="btn btn-primary">Criar</button>
-                                </div>
+
 
                             </form>
+                            <div className="button-cancelar-criar">
+                                <button type="submit" className="btn btn-primary">Cancelar</button>
+                                <button type="submit" className="btn btn-primary">Criar</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>

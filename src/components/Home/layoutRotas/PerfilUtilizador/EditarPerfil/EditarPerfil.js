@@ -1,3 +1,5 @@
+import "./EditarPerfil.css"
+
 export default function EditarPerfil() {
     return (
         <div id="perfilDeUtilizador">
@@ -68,11 +70,12 @@ export default function EditarPerfil() {
                                             placeholder=":"/>
 
                                     </div>
-                                    <button type="submit" className="btn btn-primary">Recuperar Senha</button>
-                                </div>
-                                <div>
+
+                                    </div>
+                                <div className="button-recuperar-cancelar-guardar">
                                     <button type="submit" className="btn btn-primary">Cancelar</button>
                                     <button type="submit" className="btn btn-primary">Guardar</button>
+                                    <button type="submit" className="btn btn-primary">Recuperar Senha</button>
                                 </div>
 
                             </form>

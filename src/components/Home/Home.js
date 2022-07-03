@@ -10,20 +10,19 @@ export default function Home() {
     return (
         <>
             <Cabecalho/>
-            <ul className="nav nav-tabs">
-                <li className="nav-item">
-                    <a className="nav-link " aria-current="page" onClick={() => history.push("/administarmatriculas")}>Administrar
-                        matriculas</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" id="abcd" onClick={() => history.push("/gerircursos")}>Gerir Cursos</a>
-                </li>
-                <li className="nav-item ">
-                    <a className="nav-link" onClick={() => history.push("/perfilutilizador")}>Perfil de
-                        utilizador</a>
-                </li>
-            </ul>
-
+                <ul className="nav nav-tabs">
+                    <li className="nav-item">
+                        <a className="nav-link " aria-current="page" onClick={() => history.push("/administarmatriculas")}>Administrar
+                            matriculas</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" id="abcd" onClick={() => history.push("/gerircursos")}>Gerir Cursos</a>
+                    </li>
+                    <li className="nav-item ">
+                        <a className="nav-link" onClick={() => history.push("/perfilutilizador")}>Perfil de
+                            utilizador</a>
+                    </li>
+                </ul>
         </>
     )
 }

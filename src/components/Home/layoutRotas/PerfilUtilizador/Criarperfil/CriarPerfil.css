@@ -1,3 +1,17 @@
 h1{
     text-align: center;
 }
+
+/*Estilizando os buttons*/
+.button-cancelar-criar button {
+
+   background-color: #2F5063;
+    border-color: #2F5063;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 100px;
+}
+
+.button-cancelar-criar{
+    margin-left: 57%;
+}

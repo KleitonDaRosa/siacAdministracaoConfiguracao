@@ -16,7 +16,6 @@ export default function AdministarMatriculas() {
     }, [])
 
     //------------------------------------------------------------------------------------------------------------------
-    const [open, setOpen] = useState(false);
     //----------------------- Opter os alunos do backend --------------------------------------------------------------
     const [alunos, setAlunos] = useState([]);
 

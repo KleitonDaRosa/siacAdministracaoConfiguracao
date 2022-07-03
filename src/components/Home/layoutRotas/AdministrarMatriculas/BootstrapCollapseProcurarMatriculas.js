@@ -4,8 +4,12 @@ import Collapse from 'react-bootstrap/Collapse';
 import "./estilo.css"
 
 
-export default function Procurar() {
+export default function Procurar({alunos}) {
     const [open, setOpen] = useState(false);
+    //----------------------- Opter os alunos do backend --------------------------------------------------------------
+
+
+    //------------------------------------------------------------------------------------------------------------------
 
     return (
         <div className={"btnButstrarpchange"}>
@@ -20,6 +24,11 @@ export default function Procurar() {
                 <div id="example-collapse-text">
                     <br/>
                     <p>Ainda nao ha dados</p>
+                    {
+                        alunos.map((aluno) => (
+                            <p>{aluno.nome_aluno}</p>
+                        ))
+                    }
                 </div>
             </Collapse>
         </div>

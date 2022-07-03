@@ -29,6 +29,7 @@ export default function MinhaConta () {
                 </p>
             </div>
             <button id="editarperfil" className="btn btn-primary">Editar Perfil</button>
+
         </section>
     )
 }

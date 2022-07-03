@@ -1,7 +1,7 @@
 import "./GerirCursos.css"
 import React, {useEffect, useState} from "react";
 import Modal from "react-modal";
-import Example from "./TEST"
+
 
 
 function GerirCursos() {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import history from "../../services/history";
 
 export default function Example() {
     const [show, setShow] = useState(false);
@@ -9,22 +10,27 @@ export default function Example() {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
-            </Button>
+            <li className={"pointclick nav-item"}>
+                <a onClick={handleShow}>
+                    Sair
+                </a>
+            </li>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>Deseja mesmo Sair ?</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Não
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                    <Button variant="primary" onClick={()=>{
+                        localStorage.removeItem("isAuthenticated")
+                        history.push("/")
+                    }}>
+                        Sim
                     </Button>
+
                 </Modal.Footer>
             </Modal>
         </>

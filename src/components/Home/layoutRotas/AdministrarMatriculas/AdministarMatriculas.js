@@ -10,12 +10,22 @@ export default function AdministarMatriculas() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/cursos`)
             .then((response) => {
+                 console.log(response)
                 return response.json()
             }).then((data) => setCursos(data))
     }, [])
 
     //------------------------------------------------------------------------------------------------------------------
+    const [open, setOpen] = useState(false);
+    //----------------------- Opter os alunos do backend --------------------------------------------------------------
+    const [alunos, setAlunos] = useState([]);
 
+    useEffect(() => {
+        fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/alunos`)
+            .then((response) => {
+                return response.json()
+            }).then((data) => setAlunos(data))
+    }, [])
     return (
 
         <div id="administrarMatriculas">
@@ -47,7 +57,7 @@ export default function AdministarMatriculas() {
                 </div>
 
 
-                <Procurar/>
+                <Procurar alunos={alunos}/>
             </FORM>
 
         </div>

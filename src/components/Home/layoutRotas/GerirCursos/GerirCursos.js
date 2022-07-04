@@ -1,11 +1,20 @@
 import "./GerirCursos.css"
 import React, {useEffect, useState} from "react";
 import Modal from "react-modal";
+import Button from 'react-bootstrap/Button';
+import ModalB from 'react-bootstrap/Modal';
 
 
 
 function GerirCursos() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    let [cursoaEliminar, setcursoaEliminar] = useState(false)
+
+    //---------------for modal in bootstrap-------------
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    //--------------------------------------------------
 
     //----------------------- Opter os cursos do backend----------------------------------------------------------------
     const [cursos, setCursos] = useState([]);
@@ -109,7 +118,7 @@ function GerirCursos() {
         </div>
 
 
-        {/*---------------------------------------*/}
+        {/*----------------------tabela-----------------------------------------------------*/}
         <div id="tabela">
             <table className="table table-hover">
                 <thead>
@@ -121,7 +130,10 @@ function GerirCursos() {
                 <tbody className="table-group-divider">
                 {
                     cursos.map((curso) => (
-                        <tr className="tableElement" onClick={() => removerCurso(curso.id_curso)}>
+                        <tr className="tableElement" onClick={()=>{
+                            setcursoaEliminar(curso.id_curso)
+                            handleShow()
+                        }}>
                             <td>{curso.nome_curso}</td>
                             <td>{curso.estado_curso}</td>
                         </tr>
@@ -131,6 +143,29 @@ function GerirCursos() {
 
             </table>
         </div>
+
+
+
+
+        <ModalB show={show} onHide={handleClose}>
+            <ModalB.Header closeButton>
+                <ModalB.Title>Deseja eliminar ?</ModalB.Title>
+            </ModalB.Header>
+            <ModalB.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Não
+                </Button>
+                <Button variant="primary" onClick={()=>{
+                    removerCurso(cursoaEliminar)
+                    console.log(cursoaEliminar)
+                    handleClose()
+                }}>
+                    Sim
+                </Button>
+
+            </ModalB.Footer>
+        </ModalB>
+
 
 
     </div>)

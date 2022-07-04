@@ -6,10 +6,6 @@ import "./estilo.css"
 
 export default function Procurar({alunos}) {
     const [open, setOpen] = useState(false);
-    //----------------------- Opter os alunos do backend --------------------------------------------------------------
-
-
-    //------------------------------------------------------------------------------------------------------------------
 
     return (
         <div className={"btnButstrarpchange"}>
@@ -26,9 +22,7 @@ export default function Procurar({alunos}) {
                     {
                        alunos.length > 0 ? (
                             alunos.map((aluno) => {
-                                if(aluno.nome_aluno === "Jose Rui"){
-                                    return  <p>{aluno.nome_aluno}</p>
-                                }
+                                return  <p>{aluno.nome_aluno}</p>
                             })
                         ) : <p>Ainda nao ha dados</p>
 

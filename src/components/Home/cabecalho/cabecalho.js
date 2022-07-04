@@ -2,7 +2,7 @@ import React from "react"
 import UtaIcon from "./imgIconUTA.png"
 import "./cabecalho.css"
 import history from "../../../services/history";
-import Example from "./BootstrapModalSair"
+import Sair from "./BootstrapModalSair"
 
 export default function Cabecalho() {
     return (
@@ -22,7 +22,7 @@ export default function Cabecalho() {
                             history.push("/minhaconta")
                         }}>Minha conta</a></li>
 
-                        <Example/>
+                        <Sair/>
 
                     </ul>
 
